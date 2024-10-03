@@ -2,6 +2,13 @@
 
 ----
 
+## 0.1.2
+- Correct Readme and Changelog directoyr
+- Update default assignments
+- Add Debugging tools for vscode
+
+----
+
 ## 0.1.1
 - Spelling updates
 - Include note about `node` and package manager requirements

@@ -10,14 +10,17 @@ Solution(as of this commit): In order to achieve this, you must use prefixes app
 See `.sample.env` for default parameter values:
 
 ```
-# Inbound from Arena to Wire Prefix for Sending to Wire
-INBOUND_PREFIX=/wire
-# Outbound Wire to Arena Prefix for messages sent From Wire
-OUTBOUND_PREFIX=/arena
-# /composition string prefix as sent from Arena by default
-COMPOSITION_PREFIX=/composition
-RESOLUME_INBOUND_PORT=8338
-RESOLUME_OUTBOUND_PORT=8000
+    # Inbound from Arena to Wire OSC Address Prefix
+    INBOUND_PREFIX=/wire
+    # Outbound from Wire to Arena OSC Address Prefix
+    OUTBOUND_PREFIX=/arena
+    # composition string prefix as sent from Arena
+    COMPOSITION_PREFIX=/composition
+    # TO RESOLUME INCOMING PORT
+    OUTBOUND_PORT=8330
+    # FROM RESOLUME OUTGOING PORT
+    INBOUND_PORT=3335
+    IP_ADDRESS='127.0.0.1'
 ```
 
 ### Wire READ / WRITE OSC NODES

@@ -1,7 +1,7 @@
 import { Client } from 'node-osc';
 
 export default class OutboundOSCClient {
-    constructor(ipAddress = '127.0.0.1', port = 8338) {
+    constructor(ipAddress = '127.0.0.1', port = 8330) {
         this.client = new Client(ipAddress, port);
     }
     async send(address, message) {

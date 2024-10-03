@@ -9,7 +9,7 @@ const compPrefix = process.env.COMPOSITION_PREFIX ?? '/composition';
 const compPrefixLength = compPrefix.length;
 
 export default class InboundOSCListener {
-    constructor(outboundClient, port = 3333, ipAddress = '127.0.0.1') {
+    constructor(outboundClient, port = 3335, ipAddress = '127.0.0.1') {
         this.outboundClient = outboundClient;
         this.server = new Server(port, ipAddress);
     }
@@ -37,7 +37,7 @@ export default class InboundOSCListener {
                         sendAddress: inboundPrefix + address,
                     };
                     console.log(
-                        `Sending From Arena/Avenue to Wire: ${address}`
+                        `Sending From Arena/Avenue to Wire: ${sendObj.sendAddress}`
                     );
                 } else if (
                     compString.slice(0, outboundPrefix.length).length ===
@@ -50,7 +50,7 @@ export default class InboundOSCListener {
                         sendAddress: address.slice(outboundPrefix.length),
                     };
                     console.log(
-                        `Sending From Wire to Arena/Avenue: ${address}`
+                        `Sending From Wire to Arena/Avenue: ${sendObj.sendAddress}`
                     );
                 }
                 try {
