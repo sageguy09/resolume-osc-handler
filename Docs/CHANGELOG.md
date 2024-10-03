@@ -3,7 +3,7 @@
 ----
 
 ## 0.1.2
-- Correct Readme and Changelog directoyr
+- Correct Readme and Changelog directory
 - Update default assignments
 - Add Debugging tools for vscode
 
