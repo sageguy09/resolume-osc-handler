@@ -36,6 +36,8 @@ cp ./.sample.env .env
 Overwrite any values based on your project needs
 
 ## Start Server
+** Requires `node.js` installed on your machine and either `npm`/`yarn` **
+
 `npm:`
 ```shell
 npm install && npm start
@@ -45,7 +47,3 @@ npm install && npm start
 ```shell
 yarn && yarn start
 ```
-
-
-
-

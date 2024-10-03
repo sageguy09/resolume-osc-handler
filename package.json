@@ -1,6 +1,6 @@
 {
   "name": "resolume-osc-handler",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple node app for handling OSC Address prefixes for sending/receiving OSC from Resolume Arena/Aveneue and Resolume Wire",
   "main": "index.js",
   "scripts": {
